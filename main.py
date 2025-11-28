@@ -18,3 +18,5 @@ def day_of_week(day):
 
 num = int(input("Enter the No. of day "))
 print (day_of_week(num))
+
+print(help("modules"))
