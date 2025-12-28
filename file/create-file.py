@@ -1,8 +1,12 @@
+import csv
 
-txt_data = "Hello their i am ghost an AI ML dev how may i help you."
+coustomer = [["Name","Age","Product"],
+             ["Yash",20,"Mac M4"],
+             ["Vedanti",19,"Mac M4"],
+             ["Dogesh",23,"Mac pro M4"]]
 
-file_path = "readme.txt"
+file_path = "coustomer.csv"
 
 with open(file_path,"w") as file:
-    file.write(txt_data)
-    print(f"txt file '{file_path}' has been created ")
+    writer = csv.writer(coustomer,file)
+    print(f"The csv file has been created {file_path}")
